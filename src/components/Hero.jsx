@@ -20,7 +20,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.8 }}
           className="text-sm md:text-base max-w-xl mt-4">
-          I'm Omeed,
+          I&apos;m Omeed,
           <Link className="underline mx-1 text-orange-200" href="#">
             Fortune 50 Executive Coach
           </Link>
