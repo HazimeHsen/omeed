@@ -20,7 +20,9 @@ const About = () => {
   }, [controlsText, inViewText, controlsImage, inViewImage]);
 
   return (
-    <div className="flex md:flex-row flex-col items-center justify-center h-screen">
+    <div
+      id="about"
+      className="flex md:flex-row flex-col items-center justify-center h-screen">
       <motion.div
         ref={refText}
         initial="hidden"

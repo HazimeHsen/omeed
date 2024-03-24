@@ -16,6 +16,7 @@ const ServiceItem = ({ title, descriptions }) => {
 
   return (
     <motion.div
+      id="#services"
       ref={ref}
       initial="hidden"
       animate={controls}
