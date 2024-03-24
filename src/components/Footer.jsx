@@ -29,8 +29,10 @@ const Footer = () => {
         <nav className="flex flex-wrap justify-center -mx-5 -my-2">
           {links.map((l, i) => (
             <div key={i} className="px-5 py-2">
-              <a href="#" className="text-base leading-6 hover:text-secondary">
-                {l}
+              <a
+                href={l.href}
+                className="text-base leading-6 hover:text-secondary">
+                {l.title}
               </a>
             </div>
           ))}
