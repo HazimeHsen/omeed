@@ -3,7 +3,8 @@ import React, { useState, useEffect } from "react";
 import { motion, useAnimation, AnimatePresence } from "framer-motion";
 import BurgerMenu from "./BurgerMenu";
 import MenuLinks from "./MenuLinks";
-import Logo from "../logo";
+import Link from "next/link";
+import Image from "next/image";
 
 function Navbar() {
   const logoControls = useAnimation();
@@ -30,7 +31,15 @@ function Navbar() {
         className="relative z-50"
         initial={{ x: -150 }} // Initial position for the logo sliding from left
         animate={logoControls}>
-        <Logo />
+        <Link href="/" className={`flex items-center font-bold gap-2`}>
+          <Image
+            className="object-contain md:w-[90px] w-[60px]"
+            width={90}
+            height={90}
+            src="/images/logo.png"
+            alt="logo"
+          />
+        </Link>{" "}
       </motion.div>
       <AnimatePresence>
         <motion.div
