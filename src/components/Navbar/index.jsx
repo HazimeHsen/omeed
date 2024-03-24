@@ -1,32 +1,13 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { motion, useAnimation, AnimatePresence } from "framer-motion";
-import Logo from "../Logo";
 import BurgerMenu from "./BurgerMenu";
 import MenuLinks from "./MenuLinks";
+import Logo from "../logo";
 
 function Navbar() {
-  const [isGlassy, setIsGlassy] = useState(false);
   const logoControls = useAnimation();
   const burgerMenuControls = useAnimation();
-
-  useEffect(() => {
-    const handleScroll = () => {
-      const scrollPosition = window.scrollY;
-      const glassyThreshold = 50; // Adjust this threshold as needed
-
-      // Check if the scroll position is beyond the threshold to determine transparency
-      setIsGlassy(scrollPosition > glassyThreshold);
-    };
-
-    // Attach the scroll event listener
-    window.addEventListener("scroll", handleScroll);
-
-    // Clean up the event listener on component unmount
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
 
   useEffect(() => {
     // Start animation for the logo sliding from left
