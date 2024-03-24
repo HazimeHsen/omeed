@@ -17,7 +17,7 @@ const AppreciationSection = ({ testimonialsData }) => {
   return (
     <div
       id="appreciation"
-      className="h-screen flex justify-center flex-col py-20 items-center px-4">
+      className="flex justify-center flex-col py-20 items-center px-4">
       <motion.h1
         ref={ref}
         initial="hidden"

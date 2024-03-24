@@ -20,9 +20,9 @@ const TestimonialsSlider = ({ testimonials }) => {
         className="relative">
         {testimonials.map((testimonial, index) => (
           <SwiperSlide key={index}>
-            <div className="bg-white mb-10 max-w-md mx-auto p-8 shadow-lg rounded-lg">
-              <p className="text-gray-800 mb-4">{testimonial.text}</p>
-              <div className="flex items-center">
+            <div className=" mb-10 max-w-md mx-auto text-center rounded-lg">
+              <p className="mb-4 text-sm">{testimonial.text}</p>
+              <div className="flex items-center justify-center">
                 <Image
                   width={50}
                   height={50}
@@ -31,10 +31,10 @@ const TestimonialsSlider = ({ testimonials }) => {
                   className="w-12 h-12 rounded-full mr-4 object-fill"
                 />
                 <div>
-                  <p className="text-gray-700 font-semibold">
+                  <p className="text-gray-300 font-semibold">
                     {testimonial.name}
                   </p>
-                  <p className="text-gray-600">{testimonial.position}</p>
+                  <p className="text-gray-300">{testimonial.position}</p>
                 </div>
               </div>
             </div>

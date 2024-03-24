@@ -22,7 +22,7 @@ const About = () => {
   return (
     <div
       id="about"
-      className="flex md:flex-row flex-col items-center justify-center h-screen">
+      className="flex flex-row items-center justify-center h-[80vh]">
       <motion.div
         ref={refText}
         initial="hidden"
@@ -32,7 +32,7 @@ const About = () => {
           hidden: { opacity: 0, y: 50 },
         }}
         transition={{ duration: 0.5 }}
-        className="w-full md:w-1/2 h-full flex justify-center text-center items-center text-4xl px-4 py-6 font-bold text-black bg-[#f6f6f6]">
+        className="w-full md:w-1/2 h-full flex justify-center text-center items-center text-2xl md:text-4xl px-4 py-6 font-bold text-black bg-[#f6f6f6]">
         <div className="md:max-w-md">
           COACHING LEADERS TO ACHIEVE IMPOSSIBLE RESULTS, COACHING
         </div>

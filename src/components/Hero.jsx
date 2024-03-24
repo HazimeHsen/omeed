@@ -19,7 +19,7 @@ const Hero = () => {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4, delay: 0.8 }}
-          className="text-sm md:text-base max-w-xl mt-4">
+          className="md:text-base max-w-xl mt-4">
           I&apos;m Omeed,
           <Link className="underline mx-1 text-orange-200" href="#">
             Fortune 50 Executive Coach
@@ -48,7 +48,7 @@ const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.4, delay: 1.3 }}>
               <Image
-                className="md:w-[100px] w-[80px] object-contain"
+                className="md:w-[130px] w-[80px] object-contain"
                 width={100}
                 height={100}
                 src="/images/companies/google.png"
@@ -59,7 +59,7 @@ const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.4, delay: 1.4 }}>
               <Image
-                className="md:w-[100px] w-[80px] object-contain"
+                className="md:w-[130px] w-[80px] object-contain"
                 width={100}
                 height={100}
                 src="/images/companies/bcg.png"
@@ -70,7 +70,7 @@ const Hero = () => {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.4, delay: 1.5 }}>
               <Image
-                className="md:w-[100px] w-[80px] object-contain"
+                className="md:w-[130px] w-[80px] object-contain"
                 width={100}
                 height={100}
                 src="/images/companies/stanford.png"
@@ -85,7 +85,7 @@ const Hero = () => {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.4, delay: 2 }}
-            className="rounded-full absolute md:top-14 top-10 -left-20 md:-left-36 md:text-base text-xs h-fit bg-secondary px-3 md:px-6 py-2 md:py-2 font-bold transition-colors duration-200 hover:bg-secondary/80">
+            className="rounded-full absolute md:top-14 animate-bounce shadow-slate-500 shadow-md top-10 -left-20 md:-left-36 md:text-base text-xs h-fit bg-secondary px-3 md:px-6 py-2 md:py-2 font-bold transition-colors duration-200 hover:bg-secondary/80">
             SCHEDULE A CALL
           </motion.button>
           <motion.div
